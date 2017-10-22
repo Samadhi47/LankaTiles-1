@@ -8,12 +8,12 @@ namespace LankaTiles
 {
     class Employee
     {
-        private int empID;
-        private string empName;
-        private string empNIC;
-        private int empContactNo;
-        private string empType;
-        private int dateJoined;
+        protected int empID;
+        protected string empName;
+        protected string empNIC;
+        protected int empContactNo;
+        protected string empType;
+        protected int dateJoined;
 
         public void login() { }
         public void deleteEmp() { }
