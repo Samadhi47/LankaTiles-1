@@ -1,0 +1,6 @@
+create database LankaTiles;
+use LankaTiles;
+create table users(empID int Primary key, empName varchar(20), username varchar(20), empNIC varchar(20), empContactNo varchar(15),empType varchar(20), empDateJoined varchar(20), password varchar(20));
+drop table users;
+insert into users values (0001, 'E.A.S. Sashika', 'sashika', '973174339v' ,'0770382748', 'None', '2017/01/01', 'sashika' );
+select * from users;
