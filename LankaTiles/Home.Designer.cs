@@ -1,0 +1,627 @@
+﻿namespace LankaTiles
+{
+    partial class Home
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.addTIN = new System.Windows.Forms.Button();
+            this.viewTin = new System.Windows.Forms.Button();
+            this.addTon = new System.Windows.Forms.Button();
+            this.viewTon = new System.Windows.Forms.Button();
+            this.updateTon = new System.Windows.Forms.Button();
+            this.removeTon = new System.Windows.Forms.Button();
+            this.addGin = new System.Windows.Forms.Button();
+            this.removeGin = new System.Windows.Forms.Button();
+            this.viewGin = new System.Windows.Forms.Button();
+            this.viewGrn = new System.Windows.Forms.Button();
+            this.addGrn = new System.Windows.Forms.Button();
+            this.report1 = new System.Windows.Forms.Button();
+            this.report2 = new System.Windows.Forms.Button();
+            this.report3 = new System.Windows.Forms.Button();
+            this.report4 = new System.Windows.Forms.Button();
+            this.stockBal = new System.Windows.Forms.Button();
+            this.uncollect = new System.Windows.Forms.Button();
+            this.addInvoice = new System.Windows.Forms.Button();
+            this.viewInvoice = new System.Windows.Forms.Button();
+            this.removeInvoce = new System.Windows.Forms.Button();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Location = new System.Drawing.Point(589, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(268, 500);
+            this.panel1.TabIndex = 0;
+            this.panel1.MouseHover += new System.EventHandler(this.panel1_MouseHover);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Black;
+            this.panel2.Controls.Add(this.button8);
+            this.panel2.Controls.Add(this.button7);
+            this.panel2.Controls.Add(this.button6);
+            this.panel2.Controls.Add(this.button5);
+            this.panel2.Controls.Add(this.button4);
+            this.panel2.Controls.Add(this.button3);
+            this.panel2.Controls.Add(this.button2);
+            this.panel2.Controls.Add(this.button1);
+            this.panel2.Location = new System.Drawing.Point(14, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(270, 500);
+            this.panel2.TabIndex = 1;
+            this.panel2.Visible = false;
+            this.panel2.MouseLeave += new System.EventHandler(this.panel2_MouseLeave);
+            // 
+            // button1
+            // 
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button1.Location = new System.Drawing.Point(25, 50);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(89, 69);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "TIN";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button2.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button2.Location = new System.Drawing.Point(142, 50);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(89, 69);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "TON";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button3.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button3.Location = new System.Drawing.Point(142, 265);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(89, 69);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "STOCK";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button4
+            // 
+            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button4.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button4.Location = new System.Drawing.Point(25, 265);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(89, 69);
+            this.button4.TabIndex = 3;
+            this.button4.Text = "REPORT";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button5
+            // 
+            this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
+            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button5.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button5.Location = new System.Drawing.Point(142, 157);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(89, 69);
+            this.button5.TabIndex = 4;
+            this.button5.Text = "GRN";
+            this.button5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button6
+            // 
+            this.button6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button6.BackgroundImage")));
+            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button6.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button6.Location = new System.Drawing.Point(25, 157);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(89, 69);
+            this.button6.TabIndex = 5;
+            this.button6.Text = "GIN";
+            this.button6.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // button7
+            // 
+            this.button7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button7.BackgroundImage")));
+            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button7.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button7.Location = new System.Drawing.Point(25, 370);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(89, 69);
+            this.button7.TabIndex = 2;
+            this.button7.Text = "INVOICE";
+            this.button7.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // button8
+            // 
+            this.button8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button8.BackgroundImage")));
+            this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button8.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button8.Location = new System.Drawing.Point(156, 370);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(75, 69);
+            this.button8.TabIndex = 6;
+            this.button8.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.flowLayoutPanel1.Controls.Add(this.addTIN);
+            this.flowLayoutPanel1.Controls.Add(this.viewTin);
+            this.flowLayoutPanel1.Controls.Add(this.addTon);
+            this.flowLayoutPanel1.Controls.Add(this.viewTon);
+            this.flowLayoutPanel1.Controls.Add(this.updateTon);
+            this.flowLayoutPanel1.Controls.Add(this.removeTon);
+            this.flowLayoutPanel1.Controls.Add(this.addGin);
+            this.flowLayoutPanel1.Controls.Add(this.removeGin);
+            this.flowLayoutPanel1.Controls.Add(this.viewGin);
+            this.flowLayoutPanel1.Controls.Add(this.viewGrn);
+            this.flowLayoutPanel1.Controls.Add(this.addGrn);
+            this.flowLayoutPanel1.Controls.Add(this.report1);
+            this.flowLayoutPanel1.Controls.Add(this.report2);
+            this.flowLayoutPanel1.Controls.Add(this.report3);
+            this.flowLayoutPanel1.Controls.Add(this.report4);
+            this.flowLayoutPanel1.Controls.Add(this.stockBal);
+            this.flowLayoutPanel1.Controls.Add(this.uncollect);
+            this.flowLayoutPanel1.Controls.Add(this.addInvoice);
+            this.flowLayoutPanel1.Controls.Add(this.viewInvoice);
+            this.flowLayoutPanel1.Controls.Add(this.removeInvoce);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(57, 23);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(510, 462);
+            this.flowLayoutPanel1.TabIndex = 1;
+            // 
+            // addTIN
+            // 
+            this.addTIN.BackColor = System.Drawing.Color.Transparent;
+            this.addTIN.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("addTIN.BackgroundImage")));
+            this.addTIN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.addTIN.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.addTIN.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addTIN.ForeColor = System.Drawing.Color.Black;
+            this.addTIN.Location = new System.Drawing.Point(3, 3);
+            this.addTIN.Name = "addTIN";
+            this.addTIN.Size = new System.Drawing.Size(101, 85);
+            this.addTIN.TabIndex = 0;
+            this.addTIN.Text = "Add TIN";
+            this.addTIN.UseVisualStyleBackColor = false;
+            this.addTIN.Visible = false;
+            // 
+            // viewTin
+            // 
+            this.viewTin.BackColor = System.Drawing.Color.Transparent;
+            this.viewTin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("viewTin.BackgroundImage")));
+            this.viewTin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.viewTin.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.viewTin.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.viewTin.ForeColor = System.Drawing.Color.Black;
+            this.viewTin.Location = new System.Drawing.Point(110, 3);
+            this.viewTin.Name = "viewTin";
+            this.viewTin.Size = new System.Drawing.Size(101, 85);
+            this.viewTin.TabIndex = 1;
+            this.viewTin.Text = "View TIN";
+            this.viewTin.UseVisualStyleBackColor = false;
+            this.viewTin.Visible = false;
+            // 
+            // addTon
+            // 
+            this.addTon.BackColor = System.Drawing.Color.Transparent;
+            this.addTon.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("addTon.BackgroundImage")));
+            this.addTon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.addTon.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.addTon.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addTon.ForeColor = System.Drawing.Color.Black;
+            this.addTon.Location = new System.Drawing.Point(217, 3);
+            this.addTon.Name = "addTon";
+            this.addTon.Size = new System.Drawing.Size(101, 85);
+            this.addTon.TabIndex = 2;
+            this.addTon.Text = "Add TON";
+            this.addTon.UseVisualStyleBackColor = false;
+            this.addTon.Visible = false;
+            // 
+            // viewTon
+            // 
+            this.viewTon.BackColor = System.Drawing.Color.Transparent;
+            this.viewTon.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("viewTon.BackgroundImage")));
+            this.viewTon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.viewTon.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.viewTon.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.viewTon.ForeColor = System.Drawing.Color.Black;
+            this.viewTon.Location = new System.Drawing.Point(324, 3);
+            this.viewTon.Name = "viewTon";
+            this.viewTon.Size = new System.Drawing.Size(101, 85);
+            this.viewTon.TabIndex = 3;
+            this.viewTon.Text = "View TON";
+            this.viewTon.UseVisualStyleBackColor = false;
+            this.viewTon.Visible = false;
+            // 
+            // updateTon
+            // 
+            this.updateTon.BackColor = System.Drawing.Color.Transparent;
+            this.updateTon.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("updateTon.BackgroundImage")));
+            this.updateTon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.updateTon.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.updateTon.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updateTon.ForeColor = System.Drawing.Color.Black;
+            this.updateTon.Location = new System.Drawing.Point(3, 94);
+            this.updateTon.Name = "updateTon";
+            this.updateTon.Size = new System.Drawing.Size(101, 85);
+            this.updateTon.TabIndex = 4;
+            this.updateTon.Text = "Update TON";
+            this.updateTon.UseVisualStyleBackColor = false;
+            this.updateTon.Visible = false;
+            // 
+            // removeTon
+            // 
+            this.removeTon.BackColor = System.Drawing.Color.Transparent;
+            this.removeTon.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("removeTon.BackgroundImage")));
+            this.removeTon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.removeTon.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.removeTon.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.removeTon.ForeColor = System.Drawing.Color.Black;
+            this.removeTon.Location = new System.Drawing.Point(110, 94);
+            this.removeTon.Name = "removeTon";
+            this.removeTon.Size = new System.Drawing.Size(101, 85);
+            this.removeTon.TabIndex = 5;
+            this.removeTon.Text = "Remove TON";
+            this.removeTon.UseVisualStyleBackColor = false;
+            this.removeTon.Visible = false;
+            // 
+            // addGin
+            // 
+            this.addGin.BackColor = System.Drawing.Color.Transparent;
+            this.addGin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("addGin.BackgroundImage")));
+            this.addGin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.addGin.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.addGin.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addGin.ForeColor = System.Drawing.Color.Black;
+            this.addGin.Location = new System.Drawing.Point(217, 94);
+            this.addGin.Name = "addGin";
+            this.addGin.Size = new System.Drawing.Size(101, 85);
+            this.addGin.TabIndex = 6;
+            this.addGin.Text = "Add GIN";
+            this.addGin.UseVisualStyleBackColor = false;
+            this.addGin.Visible = false;
+            // 
+            // removeGin
+            // 
+            this.removeGin.BackColor = System.Drawing.Color.Transparent;
+            this.removeGin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("removeGin.BackgroundImage")));
+            this.removeGin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.removeGin.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.removeGin.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.removeGin.ForeColor = System.Drawing.Color.Black;
+            this.removeGin.Location = new System.Drawing.Point(324, 94);
+            this.removeGin.Name = "removeGin";
+            this.removeGin.Size = new System.Drawing.Size(101, 85);
+            this.removeGin.TabIndex = 7;
+            this.removeGin.Text = "Remove GIN";
+            this.removeGin.UseVisualStyleBackColor = false;
+            this.removeGin.Visible = false;
+            // 
+            // viewGin
+            // 
+            this.viewGin.BackColor = System.Drawing.Color.Transparent;
+            this.viewGin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("viewGin.BackgroundImage")));
+            this.viewGin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.viewGin.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.viewGin.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.viewGin.ForeColor = System.Drawing.Color.Black;
+            this.viewGin.Location = new System.Drawing.Point(3, 185);
+            this.viewGin.Name = "viewGin";
+            this.viewGin.Size = new System.Drawing.Size(101, 85);
+            this.viewGin.TabIndex = 8;
+            this.viewGin.Text = "Manage GIN";
+            this.viewGin.UseVisualStyleBackColor = false;
+            this.viewGin.Visible = false;
+            // 
+            // viewGrn
+            // 
+            this.viewGrn.BackColor = System.Drawing.Color.Transparent;
+            this.viewGrn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("viewGrn.BackgroundImage")));
+            this.viewGrn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.viewGrn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.viewGrn.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.viewGrn.ForeColor = System.Drawing.Color.Black;
+            this.viewGrn.Location = new System.Drawing.Point(110, 185);
+            this.viewGrn.Name = "viewGrn";
+            this.viewGrn.Size = new System.Drawing.Size(101, 85);
+            this.viewGrn.TabIndex = 9;
+            this.viewGrn.Text = "View GRN";
+            this.viewGrn.UseVisualStyleBackColor = false;
+            this.viewGrn.Visible = false;
+            // 
+            // addGrn
+            // 
+            this.addGrn.BackColor = System.Drawing.Color.Transparent;
+            this.addGrn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("addGrn.BackgroundImage")));
+            this.addGrn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.addGrn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.addGrn.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addGrn.ForeColor = System.Drawing.Color.Black;
+            this.addGrn.Location = new System.Drawing.Point(217, 185);
+            this.addGrn.Name = "addGrn";
+            this.addGrn.Size = new System.Drawing.Size(101, 85);
+            this.addGrn.TabIndex = 10;
+            this.addGrn.Text = "Add GRN";
+            this.addGrn.UseVisualStyleBackColor = false;
+            this.addGrn.Visible = false;
+            // 
+            // report1
+            // 
+            this.report1.BackColor = System.Drawing.Color.Transparent;
+            this.report1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("report1.BackgroundImage")));
+            this.report1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.report1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.report1.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.report1.ForeColor = System.Drawing.Color.Black;
+            this.report1.Location = new System.Drawing.Point(324, 185);
+            this.report1.Name = "report1";
+            this.report1.Size = new System.Drawing.Size(101, 85);
+            this.report1.TabIndex = 11;
+            this.report1.Text = "Stock Reports";
+            this.report1.UseVisualStyleBackColor = false;
+            this.report1.Visible = false;
+            // 
+            // report2
+            // 
+            this.report2.BackColor = System.Drawing.Color.Transparent;
+            this.report2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("report2.BackgroundImage")));
+            this.report2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.report2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.report2.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.report2.ForeColor = System.Drawing.Color.Black;
+            this.report2.Location = new System.Drawing.Point(3, 276);
+            this.report2.Name = "report2";
+            this.report2.Size = new System.Drawing.Size(101, 85);
+            this.report2.TabIndex = 12;
+            this.report2.Text = "Good Receive Reports";
+            this.report2.UseVisualStyleBackColor = false;
+            this.report2.Visible = false;
+            // 
+            // report3
+            // 
+            this.report3.BackColor = System.Drawing.Color.Transparent;
+            this.report3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("report3.BackgroundImage")));
+            this.report3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.report3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.report3.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.report3.ForeColor = System.Drawing.Color.Black;
+            this.report3.Location = new System.Drawing.Point(110, 276);
+            this.report3.Name = "report3";
+            this.report3.Size = new System.Drawing.Size(101, 85);
+            this.report3.TabIndex = 13;
+            this.report3.Text = "Decrepency Detail Reports";
+            this.report3.UseVisualStyleBackColor = false;
+            this.report3.Visible = false;
+            // 
+            // report4
+            // 
+            this.report4.BackColor = System.Drawing.Color.Transparent;
+            this.report4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("report4.BackgroundImage")));
+            this.report4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.report4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.report4.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.report4.ForeColor = System.Drawing.Color.Black;
+            this.report4.Location = new System.Drawing.Point(217, 276);
+            this.report4.Name = "report4";
+            this.report4.Size = new System.Drawing.Size(101, 85);
+            this.report4.TabIndex = 14;
+            this.report4.Text = "Good Issue Reports";
+            this.report4.UseVisualStyleBackColor = false;
+            this.report4.Visible = false;
+            // 
+            // stockBal
+            // 
+            this.stockBal.BackColor = System.Drawing.Color.Transparent;
+            this.stockBal.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("stockBal.BackgroundImage")));
+            this.stockBal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.stockBal.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.stockBal.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.stockBal.ForeColor = System.Drawing.Color.Black;
+            this.stockBal.Location = new System.Drawing.Point(324, 276);
+            this.stockBal.Name = "stockBal";
+            this.stockBal.Size = new System.Drawing.Size(101, 85);
+            this.stockBal.TabIndex = 15;
+            this.stockBal.Text = "Stock Balance";
+            this.stockBal.UseVisualStyleBackColor = false;
+            this.stockBal.Visible = false;
+            // 
+            // uncollect
+            // 
+            this.uncollect.BackColor = System.Drawing.Color.Transparent;
+            this.uncollect.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("uncollect.BackgroundImage")));
+            this.uncollect.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.uncollect.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.uncollect.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uncollect.ForeColor = System.Drawing.Color.Black;
+            this.uncollect.Location = new System.Drawing.Point(3, 367);
+            this.uncollect.Name = "uncollect";
+            this.uncollect.Size = new System.Drawing.Size(111, 85);
+            this.uncollect.TabIndex = 16;
+            this.uncollect.Text = "Uncollected Items";
+            this.uncollect.UseVisualStyleBackColor = false;
+            this.uncollect.Visible = false;
+            // 
+            // addInvoice
+            // 
+            this.addInvoice.BackColor = System.Drawing.Color.Transparent;
+            this.addInvoice.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("addInvoice.BackgroundImage")));
+            this.addInvoice.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.addInvoice.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.addInvoice.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addInvoice.ForeColor = System.Drawing.Color.Black;
+            this.addInvoice.Location = new System.Drawing.Point(120, 367);
+            this.addInvoice.Name = "addInvoice";
+            this.addInvoice.Size = new System.Drawing.Size(101, 85);
+            this.addInvoice.TabIndex = 17;
+            this.addInvoice.Text = "Add Invoice";
+            this.addInvoice.UseVisualStyleBackColor = false;
+            this.addInvoice.Visible = false;
+            // 
+            // viewInvoice
+            // 
+            this.viewInvoice.BackColor = System.Drawing.Color.Transparent;
+            this.viewInvoice.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("viewInvoice.BackgroundImage")));
+            this.viewInvoice.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.viewInvoice.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.viewInvoice.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.viewInvoice.ForeColor = System.Drawing.Color.Black;
+            this.viewInvoice.Location = new System.Drawing.Point(227, 367);
+            this.viewInvoice.Name = "viewInvoice";
+            this.viewInvoice.Size = new System.Drawing.Size(101, 85);
+            this.viewInvoice.TabIndex = 18;
+            this.viewInvoice.Text = "View Invoice";
+            this.viewInvoice.UseVisualStyleBackColor = false;
+            this.viewInvoice.Visible = false;
+            // 
+            // removeInvoce
+            // 
+            this.removeInvoce.BackColor = System.Drawing.Color.Transparent;
+            this.removeInvoce.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("removeInvoce.BackgroundImage")));
+            this.removeInvoce.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.removeInvoce.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.removeInvoce.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.removeInvoce.ForeColor = System.Drawing.Color.Black;
+            this.removeInvoce.Location = new System.Drawing.Point(334, 367);
+            this.removeInvoce.Name = "removeInvoce";
+            this.removeInvoce.Size = new System.Drawing.Size(101, 85);
+            this.removeInvoce.TabIndex = 19;
+            this.removeInvoce.Text = "Remove Invoice";
+            this.removeInvoce.UseVisualStyleBackColor = false;
+            this.removeInvoce.Visible = false;
+            // 
+            // Home
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(855, 497);
+            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
+            this.Name = "Home";
+            this.ShowIcon = false;
+            this.Text = "Lanka Tiles PLC";
+            this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Button addTIN;
+        private System.Windows.Forms.Button viewTin;
+        private System.Windows.Forms.Button addTon;
+        private System.Windows.Forms.Button viewTon;
+        private System.Windows.Forms.Button updateTon;
+        private System.Windows.Forms.Button removeTon;
+        private System.Windows.Forms.Button addGin;
+        private System.Windows.Forms.Button removeGin;
+        private System.Windows.Forms.Button viewGin;
+        private System.Windows.Forms.Button viewGrn;
+        private System.Windows.Forms.Button addGrn;
+        private System.Windows.Forms.Button report1;
+        private System.Windows.Forms.Button report2;
+        private System.Windows.Forms.Button report3;
+        private System.Windows.Forms.Button report4;
+        private System.Windows.Forms.Button stockBal;
+        private System.Windows.Forms.Button uncollect;
+        private System.Windows.Forms.Button addInvoice;
+        private System.Windows.Forms.Button viewInvoice;
+        private System.Windows.Forms.Button removeInvoce;
+    }
+}
