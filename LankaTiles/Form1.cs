@@ -23,6 +23,12 @@ namespace LankaTiles
             this.Hide();
             Home h = new Home(); 
             h.Show();
-        }      
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            Database db = new Database();
+
+        }
     }
 }
