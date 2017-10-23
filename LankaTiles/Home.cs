@@ -24,7 +24,7 @@ namespace LankaTiles
 
         private void panel2_MouseLeave(object sender, EventArgs e)
         {
-            panel2.Visible = false;
+            panel2.Visible = true;
         }
 
         private void button1_Click(object sender, EventArgs e)
