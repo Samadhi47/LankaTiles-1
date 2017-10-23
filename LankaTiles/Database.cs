@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,8 @@ namespace LankaTiles
         private SqlConnection con;
         private SqlCommand cmd;
         private SqlDataAdapter da;
+        private DataTable dt;
+      
        
         public Database()
         {
@@ -48,6 +51,16 @@ namespace LankaTiles
             cmd.ExecuteNonQuery();
             con.Close();
         }
-       
+
+        public DataTable select(String query)
+        {
+            con.Open();
+            da = new SqlDataAdapter(query, con);
+            dt = new DataTable();
+            da.Fill(dt);
+            con.Close();
+            return dt;
+        }
+
     }
 }
