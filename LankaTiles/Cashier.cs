@@ -12,7 +12,7 @@ namespace LankaTiles
         public void addCashier() { }
         public void removeCashier()
         {
-
+            //gon jokes
         }
         public void updateCashier() { }
     }
