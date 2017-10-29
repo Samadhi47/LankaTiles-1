@@ -210,6 +210,9 @@
     <Compile Include="ViewTON.Designer.cs">
       <DependentUpon>ViewTON.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddGIN.resx">
+      <DependentUpon>AddGIN.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddTIN.resx">
       <DependentUpon>AddTIN.cs</DependentUpon>
     </EmbeddedResource>

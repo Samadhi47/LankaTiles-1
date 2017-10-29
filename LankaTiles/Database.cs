@@ -15,12 +15,21 @@ namespace LankaTiles
         private SqlCommand cmd;
         private SqlDataAdapter da;
         private DataTable dt;
-      
-       
+
+
         public Database()
         {
-            con = new SqlConnection("Data Source=DESKTOP-PLMQAVR\\SQLEXPRESS;Initial Catalog=LankaTiles;Integrated Security=True");
-           
+            try
+            {
+                con = new SqlConnection("Data Source=DESKTOP-PLMQAVR\\SQLEXPRESS;Initial Catalog=LankaTiles;Integrated Security=True");
+
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Cannot connect to Database!");
+               
+            }
+
         }
         public String getValue(String query)
         {
@@ -42,14 +51,22 @@ namespace LankaTiles
             con.Close();
             return foundValue;
         }
-       
+
         public void inserUpdateDelete(String query)
         {
-            con.ConnectionString = "Data Source=DESKTOP-PLMQAVR\\SQLEXPRESS;Initial Catalog=LankaTiles;Integrated Security=True";
-            con.Open();
-            cmd = new SqlCommand(query, con);
-            cmd.ExecuteNonQuery();
-            con.Close();
+            try
+            {
+                con.ConnectionString = "Data Source=DESKTOP-PLMQAVR\\SQLEXPRESS;Initial Catalog=LankaTiles;Integrated Security=True";
+                con.Open();
+                cmd = new SqlCommand(query, con);
+                cmd.ExecuteNonQuery();
+                con.Close();
+
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Database Error :(");                
+            }
         }
 
         public DataTable select(String query)
