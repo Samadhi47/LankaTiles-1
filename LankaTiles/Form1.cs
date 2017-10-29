@@ -31,7 +31,7 @@ namespace LankaTiles
 
             if (dt.Rows.Count == 1)
             {
-                MessageBox.Show(this, "Logged in Success!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //MessageBox.Show(this, "Logged in Success!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Hide();
                 pass = txtUsername.Text;
                 string a = "insert into LoginAudit (userName,lastLoginTime) values('" + Form1.pass + "','" + DateTime.Now + "')";
@@ -44,5 +44,9 @@ namespace LankaTiles
                 MessageBox.Show(this, "Username or Password is Incorrect", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
     }
 }

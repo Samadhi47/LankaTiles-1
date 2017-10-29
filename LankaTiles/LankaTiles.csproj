@@ -61,8 +61,44 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddGIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddGIN.Designer.cs">
+      <DependentUpon>AddGIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddGRN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddGRN.Designer.cs">
+      <DependentUpon>AddGRN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddInvoice.Designer.cs">
+      <DependentUpon>AddInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddTIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddTIN.Designer.cs">
+      <DependentUpon>AddTIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddTON.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddTON.Designer.cs">
+      <DependentUpon>AddTON.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cashier.cs" />
     <Compile Include="Database.cs" />
+    <Compile Include="DecripancyDetailsReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DecripancyDetailsReports.Designer.cs">
+      <DependentUpon>DecripancyDetailsReports.cs</DependentUpon>
+    </Compile>
     <Compile Include="Employee.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -71,7 +107,19 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="GoodIssueNote.cs" />
+    <Compile Include="GoodIssueReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GoodIssueReports.Designer.cs">
+      <DependentUpon>GoodIssueReports.cs</DependentUpon>
+    </Compile>
     <Compile Include="GoodRecieveNote.cs" />
+    <Compile Include="GoodRecieveReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GoodRecieveReports.Designer.cs">
+      <DependentUpon>GoodRecieveReports.cs</DependentUpon>
+    </Compile>
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,16 +128,91 @@
     </Compile>
     <Compile Include="Invoice.cs" />
     <Compile Include="Item.cs" />
+    <Compile Include="ManageGIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageGIN.Designer.cs">
+      <DependentUpon>ManageGIN.cs</DependentUpon>
+    </Compile>
     <Compile Include="Manager.cs" />
     <Compile Include="Officer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuantityDifferentNote.cs" />
+    <Compile Include="RemoveGIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemoveGIN.Designer.cs">
+      <DependentUpon>RemoveGIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RemoveInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemoveInvoice.Designer.cs">
+      <DependentUpon>RemoveInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RemoveTON.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemoveTON.Designer.cs">
+      <DependentUpon>RemoveTON.cs</DependentUpon>
+    </Compile>
     <Compile Include="Report.cs" />
     <Compile Include="ReturnNote.cs" />
     <Compile Include="RFID.cs" />
+    <Compile Include="StockBalance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockBalance.Designer.cs">
+      <DependentUpon>StockBalance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockReports.Designer.cs">
+      <DependentUpon>StockReports.cs</DependentUpon>
+    </Compile>
     <Compile Include="TransferInNote.cs" />
     <Compile Include="TransferOutNote.cs" />
+    <Compile Include="UncollectedItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UncollectedItems.Designer.cs">
+      <DependentUpon>UncollectedItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateTON.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateTON.Designer.cs">
+      <DependentUpon>UpdateTON.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewGRN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewGRN.Designer.cs">
+      <DependentUpon>ViewGRN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewInvoice.Designer.cs">
+      <DependentUpon>ViewInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewTIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewTIN.Designer.cs">
+      <DependentUpon>ViewTIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewTON.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewTON.Designer.cs">
+      <DependentUpon>ViewTON.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddTIN.resx">
+      <DependentUpon>AddTIN.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
