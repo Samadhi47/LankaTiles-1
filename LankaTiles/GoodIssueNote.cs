@@ -49,5 +49,16 @@ namespace LankaTiles
             dt = db.select(query);
             return dt;
         }
+
+        public DataTable viewReleventGin(int GINid)
+        {
+            string query = "select * from GIN" + GINid + "";
+            dt = new DataTable();
+            db = new Database();
+            dt = db.select(query);            
+            return dt;
+          
+            
+        }
     }
 }
