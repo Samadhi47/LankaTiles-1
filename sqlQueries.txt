@@ -4,3 +4,10 @@ create table users(empID int Primary key, empName varchar(20), username varchar(
 drop table users;
 insert into users values (0001, 'E.A.S. Sashika', 'sashika', '973174339v' ,'0770382748', 'None', '2017/01/01', 'sashika' );
 select * from users;
+
+//GIN
+create table AddGINTemp (code varchar(100), description varchar(300), qty float , price float, value float)
+select * from AddGINTemp
+create table GIN (GINID int primary key identity(1,1), name varchar(100), invoice varchar(50), address varchar(300), date varchar(50), time varchar(40), totalValue float, discounts float, netValue float )
+select * from gin
+select * from GIN1
