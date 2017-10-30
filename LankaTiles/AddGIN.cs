@@ -68,8 +68,7 @@ namespace LankaTiles
             }
             else
             {
-                txtDiscounts.Enabled = false;
-                
+                txtDiscounts.Enabled = false;                
             }
         }
 
@@ -92,22 +91,28 @@ namespace LankaTiles
 
         private void btnGenerateGIN_Click(object sender, EventArgs e)
         {
-            
-            Database db = new Database();
-            string query1 = "insert into GIN (name, invoice, address, date, time, totalValue, discounts, netValue) values ('"+txtName.Text+"','"+cmbInvoice.SelectedIndex+"','"+txtAddress.Text+"','"+lblDate.Text+"','"+lblTime.Text+"','"+txtTotalValue.Text+"','"+txtDiscounts.Text+"','"+txtNetValue.Text+"')";
-            db.inserUpdateDelete(query1);
-            dt2 = db.select("select GINID from GIN where name = '"+txtName.Text+"'");
-            string id = dt2.Rows[0][0].ToString();           
-            string query2 = "create table " + txtName.Text + " (GINID int , code varchar(100), description varchar(300), qty float , price float, value float)";           
-            db.inserUpdateDelete(query2);
-            dt3 = db.select("select * from AddGINTemp");
-            for (int i = 0; dt3.Rows.Count > i; i++)
+            if (string.IsNullOrEmpty(txtName.Text)||string.IsNullOrEmpty(txtAddress.Text))
             {
-                //insert Query
-                db.inserUpdateDelete("insert into " + txtName.Text + " values ( '"+id+"', '"+dt3.Rows[i].ItemArray.GetValue(0).ToString()+"', '"+dt3.Rows[i].ItemArray.GetValue(1).ToString()+"', '"+dt3.Rows[i].ItemArray.GetValue(2).ToString()+ "','" + dt3.Rows[i].ItemArray.GetValue(3).ToString() + "','" + dt3.Rows[i].ItemArray.GetValue(4).ToString() + "')");
-            }            
-           // MessageBox.Show("Done!");
-
+                MessageBox.Show("Empty Areas! Please fill.");
+            }
+            else
+            {
+                Database db = new Database();
+                string query1 = "insert into GIN (name, invoice, address, date, time, totalValue, discounts, netValue) values ('" + txtName.Text + "','" + cmbInvoice.SelectedIndex + "','" + txtAddress.Text + "','" + lblDate.Text + "','" + lblTime.Text + "','" + txtTotalValue.Text + "','" + txtDiscounts.Text + "','" + txtNetValue.Text + "')";
+                db.inserUpdateDelete(query1);
+                dt2 = db.select("select GINID from GIN where name = '" + txtName.Text + "'");
+                string id = dt2.Rows[0][0].ToString();
+                string query2 = "create table GIN" + id + " (GINID int , code varchar(100), description varchar(300), qty float , price float, value float)";
+                db.inserUpdateDelete(query2);
+                dt3 = db.select("select * from AddGINTemp");
+                for (int i = 0; dt3.Rows.Count > i; i++)
+                {
+                    //insert Query
+                    db.inserUpdateDelete("insert into GIN" + id + " values ( '" + id + "', '" + dt3.Rows[i].ItemArray.GetValue(0).ToString() + "', '" + dt3.Rows[i].ItemArray.GetValue(1).ToString() + "', '" + dt3.Rows[i].ItemArray.GetValue(2).ToString() + "','" + dt3.Rows[i].ItemArray.GetValue(3).ToString() + "','" + dt3.Rows[i].ItemArray.GetValue(4).ToString() + "')");
+                    MessageBox.Show("GIN added successfully!");
+                    this.Close();
+                }
+            } 
         }
 
         private void btnAddItem_Click(object sender, EventArgs e)

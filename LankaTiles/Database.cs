@@ -54,14 +54,14 @@ namespace LankaTiles
 
         public void inserUpdateDelete(String query)
         {
+            con.ConnectionString = "Data Source=DESKTOP-PLMQAVR\\SQLEXPRESS;Initial Catalog=LankaTiles;Integrated Security=True";
+            con.Open();
+            cmd = new SqlCommand(query, con);
+            cmd.ExecuteNonQuery();
+            con.Close();
             try
             {
-                con.ConnectionString = "Data Source=DESKTOP-PLMQAVR\\SQLEXPRESS;Initial Catalog=LankaTiles;Integrated Security=True";
-                con.Open();
-                cmd = new SqlCommand(query, con);
-                cmd.ExecuteNonQuery();
-                con.Close();
-
+               
             }
             catch (Exception)
             {
