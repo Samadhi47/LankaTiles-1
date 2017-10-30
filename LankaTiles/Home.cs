@@ -239,7 +239,127 @@ namespace LankaTiles
 
         private void button8_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            Application.Exit();
+        }
+
+        private void addTIN_Click(object sender, EventArgs e)
+        {
+            AddTIN frmAddTin = new AddTIN();
+            frmAddTin.ShowDialog();
+        }
+
+        private void viewTin_Click(object sender, EventArgs e)
+        {
+            ViewTIN frmViewTin = new ViewTIN();
+            frmViewTin.ShowDialog();
+        }
+
+        private void addTon_Click(object sender, EventArgs e)
+        {
+            AddTON frmAddTon = new AddTON();
+            frmAddTon.ShowDialog();
+        }
+
+        private void viewTon_Click(object sender, EventArgs e)
+        {
+            ViewTON frmViewTon = new ViewTON();
+            frmViewTon.ShowDialog();
+        }
+
+        private void updateTon_Click(object sender, EventArgs e)
+        {
+            UpdateTON frmUpdateTon = new UpdateTON();
+            frmUpdateTon.ShowDialog();
+        }
+
+        private void removeTon_Click(object sender, EventArgs e)
+        {
+            RemoveTON frmRemoveTon = new RemoveTON();
+            frmRemoveTon.ShowDialog();
+        }
+
+        private void addGin_Click(object sender, EventArgs e)
+        {
+            AddGIN frmAddGin = new AddGIN();
+            frmAddGin.ShowDialog();
+        }
+
+        private void removeGin_Click(object sender, EventArgs e)
+        {
+            RemoveGIN frmRemoveGin = new RemoveGIN();
+            frmRemoveGin.ShowDialog();
+        }
+
+        private void viewGin_Click(object sender, EventArgs e)
+        {
+            ManageGIN frmManageGin = new ManageGIN();
+            frmManageGin.ShowDialog();
+        }
+
+        private void viewGrn_Click(object sender, EventArgs e)
+        {
+            ViewGRN frmViewGrn = new ViewGRN();
+            frmViewGrn.ShowDialog();
+        }
+
+        private void addGrn_Click(object sender, EventArgs e)
+        {
+            AddGRN frmAddGrn = new AddGRN();
+            frmAddGrn.ShowDialog();
+        }
+
+        private void report1_Click(object sender, EventArgs e)
+        {
+            StockReports frmStockReports = new StockReports();
+            frmStockReports.ShowDialog();
+        }
+
+        private void report2_Click(object sender, EventArgs e)
+        {
+            GoodRecieveReports goodRecieveReports = new GoodRecieveReports();
+            goodRecieveReports.ShowDialog();
+        }
+
+        private void report3_Click(object sender, EventArgs e)
+        {
+            DecripancyDetailsReports frmDDR = new DecripancyDetailsReports();
+            frmDDR.ShowDialog();
+        }
+
+        private void report4_Click(object sender, EventArgs e)
+        {
+            GoodIssueReports goodIssueReports = new GoodIssueReports();
+            goodIssueReports.ShowDialog();
+        }
+
+        private void stockBal_Click(object sender, EventArgs e)
+        {
+            StockBalance frmStockBalance = new StockBalance();
+            frmStockBalance.ShowDialog();
+        }
+
+        private void uncollect_Click(object sender, EventArgs e)
+        {
+            UncollectedItems uncollectedItems = new UncollectedItems();
+            uncollectedItems.ShowDialog();
+        }
+
+        private void addInvoice_Click(object sender, EventArgs e)
+        {
+            AddInvoice frmAddInvoice = new AddInvoice();
+            frmAddInvoice.ShowDialog();
+        }
+
+        private void viewInvoice_Click(object sender, EventArgs e)
+        {
+            ViewInvoice frmViewInvoice = new ViewInvoice();
+            frmViewInvoice.ShowDialog();
+        }
+
+        private void removeInvoce_Click(object sender, EventArgs e)
+        {
+            RemoveInvoice removeInvoice = new RemoveInvoice();
+            removeInvoice.ShowDialog();
         }
     }
 }

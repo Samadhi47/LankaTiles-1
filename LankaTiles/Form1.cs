@@ -12,6 +12,10 @@ namespace LankaTiles
 {
     public partial class Form1 : Form
     {
+        public static String pass;
+        public static bool loggeduserStatus;
+        //  String Value;
+        DataTable dt;
         public Form1()
         {
             InitializeComponent();
@@ -19,15 +23,29 @@ namespace LankaTiles
 
         private void button1_Click(object sender, EventArgs e)
         {
-            // Form1 f = new Form1(); 
-            this.Hide();
-            Home h = new Home(); 
-            h.Show();
+            dt = new DataTable();
+            Database db = new Database();
+
+            dt = db.select("select * from users where username='" + txtUsername.Text + "' and password='" + txtPassword.Text + "'");
+            loggeduserStatus = true;
+
+            if (dt.Rows.Count == 1)
+            {
+                //MessageBox.Show(this, "Logged in Success!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Hide();
+                pass = txtUsername.Text;
+                string a = "insert into LoginAudit (userName,lastLoginTime) values('" + Form1.pass + "','" + DateTime.Now + "')";
+                db.inserUpdateDelete(a);
+               
+                Home home = new Home();
+                home.Show();
+            }
+            else
+                MessageBox.Show(this, "Username or Password is Incorrect", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Database db = new Database();
 
         }
     }

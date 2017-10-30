@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
@@ -60,7 +61,6 @@
             this.viewInvoice = new System.Windows.Forms.Button();
             this.removeInvoce = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -84,6 +84,17 @@
             this.panel2.TabIndex = 1;
             this.panel2.MouseLeave += new System.EventHandler(this.panel2_MouseLeave);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(96, 26);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(117, 26);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Main Menu";
+            // 
             // button8
             // 
             this.button8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button8.BackgroundImage")));
@@ -95,6 +106,7 @@
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(95, 95);
             this.button8.TabIndex = 6;
+            this.button8.Text = "EXIT";
             this.button8.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button8.UseVisualStyleBackColor = true;
             this.button8.Click += new System.EventHandler(this.button8_Click);
@@ -137,7 +149,7 @@
             this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button5.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button5.Location = new System.Drawing.Point(159, 173);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(109, 95);
@@ -255,6 +267,7 @@
             this.addTIN.Text = "Add TIN";
             this.addTIN.UseVisualStyleBackColor = false;
             this.addTIN.Visible = false;
+            this.addTIN.Click += new System.EventHandler(this.addTIN_Click);
             // 
             // viewTin
             // 
@@ -271,6 +284,7 @@
             this.viewTin.Text = "View TIN";
             this.viewTin.UseVisualStyleBackColor = false;
             this.viewTin.Visible = false;
+            this.viewTin.Click += new System.EventHandler(this.viewTin_Click);
             // 
             // addTon
             // 
@@ -287,6 +301,7 @@
             this.addTon.Text = "Add TON";
             this.addTon.UseVisualStyleBackColor = false;
             this.addTon.Visible = false;
+            this.addTon.Click += new System.EventHandler(this.addTon_Click);
             // 
             // viewTon
             // 
@@ -303,6 +318,7 @@
             this.viewTon.Text = "View TON";
             this.viewTon.UseVisualStyleBackColor = false;
             this.viewTon.Visible = false;
+            this.viewTon.Click += new System.EventHandler(this.viewTon_Click);
             // 
             // updateTon
             // 
@@ -319,6 +335,7 @@
             this.updateTon.Text = "Update TON";
             this.updateTon.UseVisualStyleBackColor = false;
             this.updateTon.Visible = false;
+            this.updateTon.Click += new System.EventHandler(this.updateTon_Click);
             // 
             // removeTon
             // 
@@ -335,6 +352,7 @@
             this.removeTon.Text = "Remove TON";
             this.removeTon.UseVisualStyleBackColor = false;
             this.removeTon.Visible = false;
+            this.removeTon.Click += new System.EventHandler(this.removeTon_Click);
             // 
             // addGin
             // 
@@ -351,6 +369,7 @@
             this.addGin.Text = "Add GIN";
             this.addGin.UseVisualStyleBackColor = false;
             this.addGin.Visible = false;
+            this.addGin.Click += new System.EventHandler(this.addGin_Click);
             // 
             // removeGin
             // 
@@ -367,6 +386,7 @@
             this.removeGin.Text = "Remove GIN";
             this.removeGin.UseVisualStyleBackColor = false;
             this.removeGin.Visible = false;
+            this.removeGin.Click += new System.EventHandler(this.removeGin_Click);
             // 
             // viewGin
             // 
@@ -383,6 +403,7 @@
             this.viewGin.Text = "Manage GIN";
             this.viewGin.UseVisualStyleBackColor = false;
             this.viewGin.Visible = false;
+            this.viewGin.Click += new System.EventHandler(this.viewGin_Click);
             // 
             // viewGrn
             // 
@@ -399,6 +420,7 @@
             this.viewGrn.Text = "View GRN";
             this.viewGrn.UseVisualStyleBackColor = false;
             this.viewGrn.Visible = false;
+            this.viewGrn.Click += new System.EventHandler(this.viewGrn_Click);
             // 
             // addGrn
             // 
@@ -415,6 +437,7 @@
             this.addGrn.Text = "Add GRN";
             this.addGrn.UseVisualStyleBackColor = false;
             this.addGrn.Visible = false;
+            this.addGrn.Click += new System.EventHandler(this.addGrn_Click);
             // 
             // report1
             // 
@@ -431,6 +454,7 @@
             this.report1.Text = "Stock Reports";
             this.report1.UseVisualStyleBackColor = false;
             this.report1.Visible = false;
+            this.report1.Click += new System.EventHandler(this.report1_Click);
             // 
             // report2
             // 
@@ -447,6 +471,7 @@
             this.report2.Text = "Good Receive Reports";
             this.report2.UseVisualStyleBackColor = false;
             this.report2.Visible = false;
+            this.report2.Click += new System.EventHandler(this.report2_Click);
             // 
             // report3
             // 
@@ -463,6 +488,7 @@
             this.report3.Text = "Decrepency Detail Reports";
             this.report3.UseVisualStyleBackColor = false;
             this.report3.Visible = false;
+            this.report3.Click += new System.EventHandler(this.report3_Click);
             // 
             // report4
             // 
@@ -479,6 +505,7 @@
             this.report4.Text = "Good Issue Reports";
             this.report4.UseVisualStyleBackColor = false;
             this.report4.Visible = false;
+            this.report4.Click += new System.EventHandler(this.report4_Click);
             // 
             // stockBal
             // 
@@ -495,6 +522,7 @@
             this.stockBal.Text = "Stock Balance";
             this.stockBal.UseVisualStyleBackColor = false;
             this.stockBal.Visible = false;
+            this.stockBal.Click += new System.EventHandler(this.stockBal_Click);
             // 
             // uncollect
             // 
@@ -511,6 +539,7 @@
             this.uncollect.Text = "Uncollected Items";
             this.uncollect.UseVisualStyleBackColor = false;
             this.uncollect.Visible = false;
+            this.uncollect.Click += new System.EventHandler(this.uncollect_Click);
             // 
             // addInvoice
             // 
@@ -527,6 +556,7 @@
             this.addInvoice.Text = "Add Invoice";
             this.addInvoice.UseVisualStyleBackColor = false;
             this.addInvoice.Visible = false;
+            this.addInvoice.Click += new System.EventHandler(this.addInvoice_Click);
             // 
             // viewInvoice
             // 
@@ -543,6 +573,7 @@
             this.viewInvoice.Text = "View Invoice";
             this.viewInvoice.UseVisualStyleBackColor = false;
             this.viewInvoice.Visible = false;
+            this.viewInvoice.Click += new System.EventHandler(this.viewInvoice_Click);
             // 
             // removeInvoce
             // 
@@ -559,28 +590,18 @@
             this.removeInvoce.Text = "Remove Invoice";
             this.removeInvoce.UseVisualStyleBackColor = false;
             this.removeInvoce.Visible = false;
+            this.removeInvoce.Click += new System.EventHandler(this.removeInvoce_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(-18, 553);
+            this.pictureBox1.Location = new System.Drawing.Point(-2, 553);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(962, 73);
+            this.pictureBox1.Size = new System.Drawing.Size(946, 73);
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(96, 26);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(117, 26);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Main Menu";
             // 
             // Home
             // 
@@ -596,7 +617,7 @@
             this.MaximizeBox = false;
             this.Name = "Home";
             this.ShowIcon = false;
-            this.Text = "Lanka Tiles PLC";
+            this.Text = "Lanka Tiles PLC - ";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
